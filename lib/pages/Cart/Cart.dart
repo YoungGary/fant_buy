@@ -11,14 +11,13 @@ class Cart extends StatelessWidget {
         title: Text("cart页面"),
       ),
       body: Cartpage(),
-      
+
     );
   }
 }
 
 class Cartpage extends StatelessWidget {
   const Cartpage({Key key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Container(
