@@ -44,8 +44,12 @@ class _SwiperAreaState extends State<SwiperArea> {
 ];
   @override
   Widget build(BuildContext context) {
+    double rpx = MediaQuery.of(context).size.width/750;
     return Container(
-      height: 200,
+      constraints: BoxConstraints(
+        minHeight: 0,
+        maxHeight: 400*rpx
+      ),
       padding: EdgeInsets.all(10),
        child: new Swiper(
         itemBuilder: (BuildContext context, int index) {
